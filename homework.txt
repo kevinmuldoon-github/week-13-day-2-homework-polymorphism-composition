@@ -1,0 +1,79 @@
+------------
+Polymorphism
+------------
+
+What does the word 'polymorphism' mean?
+---------------------------------------
+
+Polymorphism means that something can take many forms.
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+---------------------------------------------------------------------------------------
+
+In object oriented programming, polymorphism allows us to implement classes and objects in many different ways.
+
+In Java, for example, we could declare a simple function in a parent class that prints a string. In it's sub-classes, we could override this function to change what the function outputs. The function can therefore be considered polymorphic.
+
+
+What can we use to implement polymorphism in Java?
+---------------------------------------------------
+
+We can use inheritance and interfaces to implment polymorphism.
+
+How many 'forms' can an object take when using polymorphism?
+------------------------------------------------------------
+
+There are two types of polymorphism: Compile time and runtime (static and dynamic).
+
+Compile time polymorphism is also known as static polymorphism. You can use method overloading in Java for this, which is when the same method is coded many times. Each method has a different parameter setup, such as a different number of parameters, a different order of parameters of different types of parameters. This helps distinguish each method.
+
+Runtime polymorphism is also known as dynamic polymorphism. This is when a method is overrided. That is, the method overrides the parent method.
+
+Give an example of when you could use polymorphism.
+---------------------------------------------------
+
+You can use polymorphism in Java when building arrayLists of different classes. Using an interface or parent class, you can import objects from different classes into the arrayList with no issues.
+
+----------------------------
+Composition and Aggregation
+----------------------------
+
+What do we mean by 'composition' in reference to object-oriented programming?
+-----------------------------------------------------------------------------
+
+Composition means that an object can be considered part of another object.
+
+
+When would you use composition? Provide a simple example in Java.
+-----------------------------------------------------------------
+
+We can use composition when something is unique to an object.
+
+Let's say, for example, that we want to create a class for a smartphone. We can also create a class called smartphoneBattery that which is a property of the smartphone.
+
+In this example, the smartphone battery can be considered to be a component of the smartphone.
+
+
+Give a difference between composition and aggregation?
+------------------------------------------------------
+
+In composition, one object can be considered to be part of another object. That is, the smartphone is composed of parts such as smartphone batteries and smartphone displays that can only be used with smartphones.
+
+Aggregation works in a similar way, but the object can act separately from the other object. For example, a house may contain items such as beds and sofas, which can act independently. 
+
+What is/are the advantage(s) of using composition/aggregation?
+--------------------------------------------------------------
+
+Composition can be useful as it means that if an object is deleted, the objects it is composed of are also deleted.
+
+Aggregation is useful if you want the component objects and classes to still exist.
+
+When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+--------------------------------------------------------------------------------------------------------
+
+All objects would also be destroyed.
+
+When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+--------------------------------------------------------------------------------------------------------
+
+The objects that it is composed of would still exist.
